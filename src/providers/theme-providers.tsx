@@ -13,7 +13,7 @@ function ThemeProviders({ children }: { children: React.ReactNode }) {
       theme={{
         token: {
           // Seed Token
-          colorPrimary: "#A91D3A",
+          colorPrimary: "#151515",
           borderRadius: 2,
           colorBgContainer: "#EEEEEE",
         },
