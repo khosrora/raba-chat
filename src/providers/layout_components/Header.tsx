@@ -1,12 +1,19 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { curentUserFromMongoDb } from "@/server-actions/user";
-import { Avatar, message } from "antd";
+import { Avatar, message, Spin } from "antd";
 import { UserType } from "@/interfaces";
 import CurrentUserInfo from "./CurrentUserInfo";
+import { useDispatch, useSelector } from "react-redux";
+import { SetCurrentUser, UserState } from "@/redux/userSlice";
+import { LoadingOutlined } from "@ant-design/icons";
 
 function Header() {
-  const [currentUser, setCurrentUser] = useState<UserType | null>(null);
+  const dispatch = useDispatch();
+
+  const { currentUserData }: UserState = useSelector(
+    (state: any) => state.user
+  );
   const [showCurrentUserInfo, setShowCurrentUserInfo] =
     useState<boolean>(false);
 
@@ -14,7 +21,7 @@ function Header() {
     try {
       const res = await curentUserFromMongoDb();
       if (res.error) throw new Error(res.error);
-      setCurrentUser(res);
+      dispatch(SetCurrentUser(res as UserType));
     } catch (error: any) {
       message.error(error.message);
     }
@@ -25,26 +32,29 @@ function Header() {
   }, []);
 
   return (
-    currentUser && (
-      <div className="bg-[#EEEEEE] w-full px-2 flex justify-between items-center">
-        <h1 className="text-2xl font-bold uppercase">Raba Chat</h1>
-        <div className="flex gap-5 items-center">
-          <span className="font-semibold">{currentUser?.userName}</span>
-          <Avatar
-            className="cursor-pointer"
-            onClick={() => setShowCurrentUserInfo(true)}
-            src={currentUser?.profilePic}
-          />
-        </div>
-        {showCurrentUserInfo && (
-          <CurrentUserInfo
-            showCurrentUserInfo={showCurrentUserInfo}
-            setShowCurrentUserInfo={setShowCurrentUserInfo}
-            currentUserInfo={currentUser}
-          />
-        )}
-      </div>
-    )
+    <div className="bg-[#EEEEEE] w-full px-2 flex justify-between items-center">
+      <h1 className="text-2xl font-bold uppercase">Raba Chat</h1>
+      {currentUserData ? (
+        <>
+          <div className="flex gap-5 items-center">
+            <span className="font-semibold">{currentUserData?.userName}</span>
+            <Avatar
+              className="cursor-pointer"
+              onClick={() => setShowCurrentUserInfo(true)}
+              src={currentUserData?.profilePic}
+            />
+          </div>
+          {showCurrentUserInfo && (
+            <CurrentUserInfo
+              showCurrentUserInfo={showCurrentUserInfo}
+              setShowCurrentUserInfo={setShowCurrentUserInfo}
+            />
+          )}
+        </>
+      ) : (
+        <Spin indicator={<LoadingOutlined style={{ fontSize: 24 }} spin />} />
+      )}
+    </div>
   );
 }
 

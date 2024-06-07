@@ -1,19 +1,26 @@
 import { UserType } from "@/interfaces";
-import { Avatar, Button, Divider, Drawer, message } from "antd";
+import { Avatar, Button, Divider, Drawer, message, Upload } from "antd";
 import React, { Dispatch, SetStateAction, useState } from "react";
 import dayjs from "dayjs";
 import { useClerk } from "@clerk/clerk-react";
 import { useRouter } from "next/navigation";
+import { SetCurrentUser, UserState } from "@/redux/userSlice";
+import { useDispatch, useSelector } from "react-redux";
+import { uploadImageToFirebaseAndReturnUrl } from "@/helpers/ImageUpload";
+import { upadteProfileUser } from "@/server-actions/user";
 
 function CurrentUserInfo({
   showCurrentUserInfo,
   setShowCurrentUserInfo,
-  currentUserInfo,
 }: {
   showCurrentUserInfo: boolean;
   setShowCurrentUserInfo: Dispatch<SetStateAction<boolean>>;
-  currentUserInfo: UserType;
 }) {
+  const { currentUserData }: UserState = useSelector(
+    (state: any) => state.user
+  );
+
+  const dispatch = useDispatch();
   const [loading, setLoading] = useState<boolean>(false);
   const { signOut } = useClerk();
   const router = useRouter();
@@ -26,6 +33,8 @@ function CurrentUserInfo({
       </div>
     );
   };
+
+  const [selectedFile, setSelectedFile] = useState<File | null>(null);
 
   const onLogout = async () => {
     try {
@@ -41,6 +50,30 @@ function CurrentUserInfo({
     }
   };
 
+  const uploadProfileImage = async () => {
+    try {
+      setLoading(true);
+      const url: string = await uploadImageToFirebaseAndReturnUrl(
+        selectedFile!
+      );
+      const res = await upadteProfileUser(currentUserData?._id, {
+        profilePic: url,
+      });
+
+      if (res.error) {
+        throw new Error(res.error);
+      } else {
+        dispatch(SetCurrentUser(res));
+        setShowCurrentUserInfo(false);
+      }
+      setLoading(true);
+    } catch (error: any) {
+      message.error("try again !!");
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
     <Drawer
       open={showCurrentUserInfo}
@@ -49,17 +82,39 @@ function CurrentUserInfo({
     >
       <div className="flex flex-col gap-5">
         <div className="flex flex-col justify-center items-center">
-          <Avatar className="w-28 h-28" src={currentUserInfo?.profilePic} />
-          <p className="text-gray-400">change profile picture</p>
+          {!selectedFile && (
+            <Avatar className="w-28 h-28" src={currentUserData?.profilePic} />
+          )}
+          <Upload
+            beforeUpload={(file) => {
+              setSelectedFile(file);
+              return false;
+            }}
+            className="cursor-pointer"
+            listType={selectedFile ? "picture-circle" : "text"}
+            maxCount={1}
+          >
+            {" "}
+            change profile picture{" "}
+          </Upload>
         </div>
         <Divider className="my-1 border-gray-200" />
         <div className="flex flex-col gap-5">
-          {getProperty("Name", currentUserInfo.name)}
-          {getProperty("User Name", currentUserInfo.userName)}
-          {getProperty("Id", currentUserInfo._id)}
-          {getProperty("Joined On", currentUserInfo.createdAt)}
+          {getProperty("Name", currentUserData.name)}
+          {getProperty("User Name", currentUserData.userName)}
+          {getProperty("Id", currentUserData._id)}
+          {getProperty("Joined On", currentUserData.createdAt)}
         </div>
-        <div className="">
+        <div className="flex flex-col gap-y-4">
+          {selectedFile && (
+            <Button
+              className="w-full"
+              loading={loading}
+              onClick={uploadProfileImage}
+            >
+              update Profile Picture
+            </Button>
+          )}
           <Button className="w-full" loading={loading} onClick={onLogout}>
             Logout
           </Button>
