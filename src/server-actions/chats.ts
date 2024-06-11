@@ -28,6 +28,13 @@ export const getAllChatsUser = async (userId: any) => {
       },
     })
       .populate("users")
+      .populate("lastMessage")
+      .populate({
+        path: "lastMessage",
+        populate: {
+          path: "sender",
+        },
+      })
       .sort({ updatedAt: -1 });
     return JSON.parse(JSON.stringify(userChats));
   } catch (error: any) {

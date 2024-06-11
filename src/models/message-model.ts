@@ -8,7 +8,7 @@ const messageSchema = new mongoose.Schema(
       required: true,
     },
     sender: {
-      type: [mongoose.Schema.Types.ObjectId],
+      type: mongoose.Schema.Types.ObjectId,
       ref: "users",
       required: true,
     },
@@ -16,7 +16,11 @@ const messageSchema = new mongoose.Schema(
       type: String,
       default: "",
     },
-    images: {
+    text: {
+      type: String,
+      default: "",
+    },
+    image: {
       type: String,
       default: "",
     },

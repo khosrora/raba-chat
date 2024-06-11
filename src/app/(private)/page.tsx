@@ -9,9 +9,9 @@ connectToMongodb();
 
 export default async function Home() {
   return (
-    <div className="flex h-[85vh]">
+    <div className="flex h-[91vh]">
       <Chats />
-      <Divider type="vertical" className="h-full border-zinc-700" />
+      <Divider type="vertical" className="h-full border-zinc-200 px-0 mx-0" />
       <ChatArea />
     </div>
   );

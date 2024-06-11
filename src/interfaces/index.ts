@@ -13,8 +13,9 @@ export interface UserType {
 export interface MessageType {
   _id: string;
   chat: string[];
-  sender: string[];
+  sender: UserType;
   content: string;
+  text: string;
   images: string;
   readBy: string;
   createdAt: string;

@@ -1,3 +1,4 @@
+import { formatDate } from "@/helpers/dateFormats";
 import { ChatType } from "@/interfaces";
 import { ChatState, setSelectedChat } from "@/redux/chatSlice";
 import { UserState } from "@/redux/userSlice";
@@ -29,6 +30,15 @@ function ChatCard({ chat }: { chat: ChatType }) {
     chatImage = reciepent?.profilePic!;
   }
 
+  if (chat.lastMessage) {
+    lastMessage = chat.lastMessage.text;
+    lstMessageSenderName =
+      chat.lastMessage.sender._id === currentUserData?._id
+        ? "you: "
+        : `${chat.lastMessage.sender.name.split(" ")[0]} :`;
+    lastMessageTime = formatDate(chat.lastMessage.createdAt);
+  }
+
   const isSelected = selectedChat?._id === chat._id;
 
   return (
@@ -40,9 +50,14 @@ function ChatCard({ chat }: { chat: ChatType }) {
     >
       <div className="flex gap-3 items-center">
         <Avatar size="small" src={chatImage} className="w-10 h-10" />
+        <div className="flex flex-col gap-y-2">
         <span className="text-gray-500 text-sm">{chatName}</span>
+        <span className="text-gray-500 text-[10px]">{lstMessageSenderName} {lastMessage}</span>
+        </div>
       </div>
-      <div className=""></div>
+      <div className="">
+        <div className="text-xs text-zinc-400">{lastMessageTime}</div>
+      </div>
     </div>
   );
 }
