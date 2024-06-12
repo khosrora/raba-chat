@@ -20,3 +20,13 @@ body {
 .cl-internal-180wb59 {
   display: none;
 }
+
+
+/* scroll bar scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #888;
+}
