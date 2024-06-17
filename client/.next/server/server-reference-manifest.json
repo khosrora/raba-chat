@@ -1,0 +1,142 @@
+{
+  "node": {
+    "9a94c4be74614353c8a4616bcb188f618e8363d6": {
+      "workers": {
+        "app/(private)/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FVolumes%2FADATA%20SE900G%2Fdev%2Fweb%2Fraba-chat%2Fclient%2Fsrc%2Fapp%2F(private)%2Fpage.tsx%22%2C%5B%22default%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/(private)/page": "rsc"
+      }
+    },
+    "1beddfcbca5bcd8710bf03c61474e2b8dfa1fd99": {
+      "workers": {
+        "app/(private)/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FVolumes%2FADATA%20SE900G%2Fdev%2Fweb%2Fraba-chat%2Fclient%2Fsrc%2Fserver-actions%2Fmessages.ts%22%2C%5B%22%24%24ACTION_0%22%2C%22sendNewMessage%22%2C%22%24%24ACTION_2%22%2C%22%24%24ACTION_1%22%2C%22readAllMessages%22%2C%22getMessagesUser%22%5D%5D%2C%5B%22%2FVolumes%2FADATA%20SE900G%2Fdev%2Fweb%2Fraba-chat%2Fclient%2Fsrc%2Fserver-actions%2Fchats.ts%22%2C%5B%22getAllChatsUser%22%2C%22createNewChat%22%2C%22%24%24ACTION_1%22%2C%22%24%24ACTION_0%22%5D%5D%2C%5B%22%2FVolumes%2FADATA%20SE900G%2Fdev%2Fweb%2Fraba-chat%2Fclient%2Fsrc%2Fserver-actions%2Fuser.ts%22%2C%5B%22curentUserFromMongoDb%22%2C%22%24%24ACTION_0%22%2C%22%24%24ACTION_2%22%2C%22upadteProfileUser%22%2C%22getAllUsers%22%2C%22%24%24ACTION_1%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/(private)/page": "action-browser"
+      }
+    },
+    "46ba3c978be54791e04d2a1d72551698192294f9": {
+      "workers": {
+        "app/(private)/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FVolumes%2FADATA%20SE900G%2Fdev%2Fweb%2Fraba-chat%2Fclient%2Fsrc%2Fserver-actions%2Fmessages.ts%22%2C%5B%22%24%24ACTION_0%22%2C%22sendNewMessage%22%2C%22%24%24ACTION_2%22%2C%22%24%24ACTION_1%22%2C%22readAllMessages%22%2C%22getMessagesUser%22%5D%5D%2C%5B%22%2FVolumes%2FADATA%20SE900G%2Fdev%2Fweb%2Fraba-chat%2Fclient%2Fsrc%2Fserver-actions%2Fchats.ts%22%2C%5B%22getAllChatsUser%22%2C%22createNewChat%22%2C%22%24%24ACTION_1%22%2C%22%24%24ACTION_0%22%5D%5D%2C%5B%22%2FVolumes%2FADATA%20SE900G%2Fdev%2Fweb%2Fraba-chat%2Fclient%2Fsrc%2Fserver-actions%2Fuser.ts%22%2C%5B%22curentUserFromMongoDb%22%2C%22%24%24ACTION_0%22%2C%22%24%24ACTION_2%22%2C%22upadteProfileUser%22%2C%22getAllUsers%22%2C%22%24%24ACTION_1%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/(private)/page": "action-browser"
+      }
+    },
+    "4b4927c7877d71dd2df4b50a7a43437327ee86a0": {
+      "workers": {
+        "app/(private)/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FVolumes%2FADATA%20SE900G%2Fdev%2Fweb%2Fraba-chat%2Fclient%2Fsrc%2Fserver-actions%2Fmessages.ts%22%2C%5B%22%24%24ACTION_0%22%2C%22sendNewMessage%22%2C%22%24%24ACTION_2%22%2C%22%24%24ACTION_1%22%2C%22readAllMessages%22%2C%22getMessagesUser%22%5D%5D%2C%5B%22%2FVolumes%2FADATA%20SE900G%2Fdev%2Fweb%2Fraba-chat%2Fclient%2Fsrc%2Fserver-actions%2Fchats.ts%22%2C%5B%22getAllChatsUser%22%2C%22createNewChat%22%2C%22%24%24ACTION_1%22%2C%22%24%24ACTION_0%22%5D%5D%2C%5B%22%2FVolumes%2FADATA%20SE900G%2Fdev%2Fweb%2Fraba-chat%2Fclient%2Fsrc%2Fserver-actions%2Fuser.ts%22%2C%5B%22curentUserFromMongoDb%22%2C%22%24%24ACTION_0%22%2C%22%24%24ACTION_2%22%2C%22upadteProfileUser%22%2C%22getAllUsers%22%2C%22%24%24ACTION_1%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/(private)/page": "action-browser"
+      }
+    },
+    "69bf9a72a8353d8871b2f3d1b7fce47c6a084be9": {
+      "workers": {
+        "app/(private)/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FVolumes%2FADATA%20SE900G%2Fdev%2Fweb%2Fraba-chat%2Fclient%2Fsrc%2Fserver-actions%2Fmessages.ts%22%2C%5B%22%24%24ACTION_0%22%2C%22sendNewMessage%22%2C%22%24%24ACTION_2%22%2C%22%24%24ACTION_1%22%2C%22readAllMessages%22%2C%22getMessagesUser%22%5D%5D%2C%5B%22%2FVolumes%2FADATA%20SE900G%2Fdev%2Fweb%2Fraba-chat%2Fclient%2Fsrc%2Fserver-actions%2Fchats.ts%22%2C%5B%22getAllChatsUser%22%2C%22createNewChat%22%2C%22%24%24ACTION_1%22%2C%22%24%24ACTION_0%22%5D%5D%2C%5B%22%2FVolumes%2FADATA%20SE900G%2Fdev%2Fweb%2Fraba-chat%2Fclient%2Fsrc%2Fserver-actions%2Fuser.ts%22%2C%5B%22curentUserFromMongoDb%22%2C%22%24%24ACTION_0%22%2C%22%24%24ACTION_2%22%2C%22upadteProfileUser%22%2C%22getAllUsers%22%2C%22%24%24ACTION_1%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/(private)/page": "action-browser"
+      }
+    },
+    "86314fdd93bd10c800145eca3521a5d9421127fa": {
+      "workers": {
+        "app/(private)/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FVolumes%2FADATA%20SE900G%2Fdev%2Fweb%2Fraba-chat%2Fclient%2Fsrc%2Fserver-actions%2Fmessages.ts%22%2C%5B%22%24%24ACTION_0%22%2C%22sendNewMessage%22%2C%22%24%24ACTION_2%22%2C%22%24%24ACTION_1%22%2C%22readAllMessages%22%2C%22getMessagesUser%22%5D%5D%2C%5B%22%2FVolumes%2FADATA%20SE900G%2Fdev%2Fweb%2Fraba-chat%2Fclient%2Fsrc%2Fserver-actions%2Fchats.ts%22%2C%5B%22getAllChatsUser%22%2C%22createNewChat%22%2C%22%24%24ACTION_1%22%2C%22%24%24ACTION_0%22%5D%5D%2C%5B%22%2FVolumes%2FADATA%20SE900G%2Fdev%2Fweb%2Fraba-chat%2Fclient%2Fsrc%2Fserver-actions%2Fuser.ts%22%2C%5B%22curentUserFromMongoDb%22%2C%22%24%24ACTION_0%22%2C%22%24%24ACTION_2%22%2C%22upadteProfileUser%22%2C%22getAllUsers%22%2C%22%24%24ACTION_1%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/(private)/page": "action-browser"
+      }
+    },
+    "e9a067c29542e1ca25ae80b22cd576147aa7e33e": {
+      "workers": {
+        "app/(private)/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FVolumes%2FADATA%20SE900G%2Fdev%2Fweb%2Fraba-chat%2Fclient%2Fsrc%2Fserver-actions%2Fmessages.ts%22%2C%5B%22%24%24ACTION_0%22%2C%22sendNewMessage%22%2C%22%24%24ACTION_2%22%2C%22%24%24ACTION_1%22%2C%22readAllMessages%22%2C%22getMessagesUser%22%5D%5D%2C%5B%22%2FVolumes%2FADATA%20SE900G%2Fdev%2Fweb%2Fraba-chat%2Fclient%2Fsrc%2Fserver-actions%2Fchats.ts%22%2C%5B%22getAllChatsUser%22%2C%22createNewChat%22%2C%22%24%24ACTION_1%22%2C%22%24%24ACTION_0%22%5D%5D%2C%5B%22%2FVolumes%2FADATA%20SE900G%2Fdev%2Fweb%2Fraba-chat%2Fclient%2Fsrc%2Fserver-actions%2Fuser.ts%22%2C%5B%22curentUserFromMongoDb%22%2C%22%24%24ACTION_0%22%2C%22%24%24ACTION_2%22%2C%22upadteProfileUser%22%2C%22getAllUsers%22%2C%22%24%24ACTION_1%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/(private)/page": "action-browser"
+      }
+    },
+    "2c9c39c85af838ffbe6b4856f561b7d73fec5b54": {
+      "workers": {
+        "app/(private)/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FVolumes%2FADATA%20SE900G%2Fdev%2Fweb%2Fraba-chat%2Fclient%2Fsrc%2Fserver-actions%2Fmessages.ts%22%2C%5B%22%24%24ACTION_0%22%2C%22sendNewMessage%22%2C%22%24%24ACTION_2%22%2C%22%24%24ACTION_1%22%2C%22readAllMessages%22%2C%22getMessagesUser%22%5D%5D%2C%5B%22%2FVolumes%2FADATA%20SE900G%2Fdev%2Fweb%2Fraba-chat%2Fclient%2Fsrc%2Fserver-actions%2Fchats.ts%22%2C%5B%22getAllChatsUser%22%2C%22createNewChat%22%2C%22%24%24ACTION_1%22%2C%22%24%24ACTION_0%22%5D%5D%2C%5B%22%2FVolumes%2FADATA%20SE900G%2Fdev%2Fweb%2Fraba-chat%2Fclient%2Fsrc%2Fserver-actions%2Fuser.ts%22%2C%5B%22curentUserFromMongoDb%22%2C%22%24%24ACTION_0%22%2C%22%24%24ACTION_2%22%2C%22upadteProfileUser%22%2C%22getAllUsers%22%2C%22%24%24ACTION_1%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/(private)/page": "action-browser"
+      }
+    },
+    "accd6c2d8442e42df529a3fe2249ce68e13bcf0f": {
+      "workers": {
+        "app/(private)/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FVolumes%2FADATA%20SE900G%2Fdev%2Fweb%2Fraba-chat%2Fclient%2Fsrc%2Fserver-actions%2Fmessages.ts%22%2C%5B%22%24%24ACTION_0%22%2C%22sendNewMessage%22%2C%22%24%24ACTION_2%22%2C%22%24%24ACTION_1%22%2C%22readAllMessages%22%2C%22getMessagesUser%22%5D%5D%2C%5B%22%2FVolumes%2FADATA%20SE900G%2Fdev%2Fweb%2Fraba-chat%2Fclient%2Fsrc%2Fserver-actions%2Fchats.ts%22%2C%5B%22getAllChatsUser%22%2C%22createNewChat%22%2C%22%24%24ACTION_1%22%2C%22%24%24ACTION_0%22%5D%5D%2C%5B%22%2FVolumes%2FADATA%20SE900G%2Fdev%2Fweb%2Fraba-chat%2Fclient%2Fsrc%2Fserver-actions%2Fuser.ts%22%2C%5B%22curentUserFromMongoDb%22%2C%22%24%24ACTION_0%22%2C%22%24%24ACTION_2%22%2C%22upadteProfileUser%22%2C%22getAllUsers%22%2C%22%24%24ACTION_1%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/(private)/page": "action-browser"
+      }
+    },
+    "f304b7406ef26edd9ecc3efba2c6b33adf3fce88": {
+      "workers": {
+        "app/(private)/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FVolumes%2FADATA%20SE900G%2Fdev%2Fweb%2Fraba-chat%2Fclient%2Fsrc%2Fserver-actions%2Fmessages.ts%22%2C%5B%22%24%24ACTION_0%22%2C%22sendNewMessage%22%2C%22%24%24ACTION_2%22%2C%22%24%24ACTION_1%22%2C%22readAllMessages%22%2C%22getMessagesUser%22%5D%5D%2C%5B%22%2FVolumes%2FADATA%20SE900G%2Fdev%2Fweb%2Fraba-chat%2Fclient%2Fsrc%2Fserver-actions%2Fchats.ts%22%2C%5B%22getAllChatsUser%22%2C%22createNewChat%22%2C%22%24%24ACTION_1%22%2C%22%24%24ACTION_0%22%5D%5D%2C%5B%22%2FVolumes%2FADATA%20SE900G%2Fdev%2Fweb%2Fraba-chat%2Fclient%2Fsrc%2Fserver-actions%2Fuser.ts%22%2C%5B%22curentUserFromMongoDb%22%2C%22%24%24ACTION_0%22%2C%22%24%24ACTION_2%22%2C%22upadteProfileUser%22%2C%22getAllUsers%22%2C%22%24%24ACTION_1%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/(private)/page": "action-browser"
+      }
+    },
+    "f9e5623753def132d9f4d3338831d499c898a14b": {
+      "workers": {
+        "app/(private)/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FVolumes%2FADATA%20SE900G%2Fdev%2Fweb%2Fraba-chat%2Fclient%2Fsrc%2Fserver-actions%2Fmessages.ts%22%2C%5B%22%24%24ACTION_0%22%2C%22sendNewMessage%22%2C%22%24%24ACTION_2%22%2C%22%24%24ACTION_1%22%2C%22readAllMessages%22%2C%22getMessagesUser%22%5D%5D%2C%5B%22%2FVolumes%2FADATA%20SE900G%2Fdev%2Fweb%2Fraba-chat%2Fclient%2Fsrc%2Fserver-actions%2Fchats.ts%22%2C%5B%22getAllChatsUser%22%2C%22createNewChat%22%2C%22%24%24ACTION_1%22%2C%22%24%24ACTION_0%22%5D%5D%2C%5B%22%2FVolumes%2FADATA%20SE900G%2Fdev%2Fweb%2Fraba-chat%2Fclient%2Fsrc%2Fserver-actions%2Fuser.ts%22%2C%5B%22curentUserFromMongoDb%22%2C%22%24%24ACTION_0%22%2C%22%24%24ACTION_2%22%2C%22upadteProfileUser%22%2C%22getAllUsers%22%2C%22%24%24ACTION_1%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/(private)/page": "action-browser"
+      }
+    },
+    "2d2ddcb15dabc97ffa6632a46b82906ab9bb742d": {
+      "workers": {
+        "app/(private)/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FVolumes%2FADATA%20SE900G%2Fdev%2Fweb%2Fraba-chat%2Fclient%2Fsrc%2Fserver-actions%2Fmessages.ts%22%2C%5B%22%24%24ACTION_0%22%2C%22sendNewMessage%22%2C%22%24%24ACTION_2%22%2C%22%24%24ACTION_1%22%2C%22readAllMessages%22%2C%22getMessagesUser%22%5D%5D%2C%5B%22%2FVolumes%2FADATA%20SE900G%2Fdev%2Fweb%2Fraba-chat%2Fclient%2Fsrc%2Fserver-actions%2Fchats.ts%22%2C%5B%22getAllChatsUser%22%2C%22createNewChat%22%2C%22%24%24ACTION_1%22%2C%22%24%24ACTION_0%22%5D%5D%2C%5B%22%2FVolumes%2FADATA%20SE900G%2Fdev%2Fweb%2Fraba-chat%2Fclient%2Fsrc%2Fserver-actions%2Fuser.ts%22%2C%5B%22curentUserFromMongoDb%22%2C%22%24%24ACTION_0%22%2C%22%24%24ACTION_2%22%2C%22upadteProfileUser%22%2C%22getAllUsers%22%2C%22%24%24ACTION_1%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/(private)/page": "action-browser"
+      }
+    },
+    "309186651d9e6fe5b5c681063247c69e9221dde8": {
+      "workers": {
+        "app/(private)/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FVolumes%2FADATA%20SE900G%2Fdev%2Fweb%2Fraba-chat%2Fclient%2Fsrc%2Fserver-actions%2Fmessages.ts%22%2C%5B%22%24%24ACTION_0%22%2C%22sendNewMessage%22%2C%22%24%24ACTION_2%22%2C%22%24%24ACTION_1%22%2C%22readAllMessages%22%2C%22getMessagesUser%22%5D%5D%2C%5B%22%2FVolumes%2FADATA%20SE900G%2Fdev%2Fweb%2Fraba-chat%2Fclient%2Fsrc%2Fserver-actions%2Fchats.ts%22%2C%5B%22getAllChatsUser%22%2C%22createNewChat%22%2C%22%24%24ACTION_1%22%2C%22%24%24ACTION_0%22%5D%5D%2C%5B%22%2FVolumes%2FADATA%20SE900G%2Fdev%2Fweb%2Fraba-chat%2Fclient%2Fsrc%2Fserver-actions%2Fuser.ts%22%2C%5B%22curentUserFromMongoDb%22%2C%22%24%24ACTION_0%22%2C%22%24%24ACTION_2%22%2C%22upadteProfileUser%22%2C%22getAllUsers%22%2C%22%24%24ACTION_1%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/(private)/page": "action-browser"
+      }
+    },
+    "38c2708a5e4b176c1fac2d937560e4d90d575e91": {
+      "workers": {
+        "app/(private)/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FVolumes%2FADATA%20SE900G%2Fdev%2Fweb%2Fraba-chat%2Fclient%2Fsrc%2Fserver-actions%2Fmessages.ts%22%2C%5B%22%24%24ACTION_0%22%2C%22sendNewMessage%22%2C%22%24%24ACTION_2%22%2C%22%24%24ACTION_1%22%2C%22readAllMessages%22%2C%22getMessagesUser%22%5D%5D%2C%5B%22%2FVolumes%2FADATA%20SE900G%2Fdev%2Fweb%2Fraba-chat%2Fclient%2Fsrc%2Fserver-actions%2Fchats.ts%22%2C%5B%22getAllChatsUser%22%2C%22createNewChat%22%2C%22%24%24ACTION_1%22%2C%22%24%24ACTION_0%22%5D%5D%2C%5B%22%2FVolumes%2FADATA%20SE900G%2Fdev%2Fweb%2Fraba-chat%2Fclient%2Fsrc%2Fserver-actions%2Fuser.ts%22%2C%5B%22curentUserFromMongoDb%22%2C%22%24%24ACTION_0%22%2C%22%24%24ACTION_2%22%2C%22upadteProfileUser%22%2C%22getAllUsers%22%2C%22%24%24ACTION_1%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/(private)/page": "action-browser"
+      }
+    },
+    "d03f5ff2faf346d343af711a7e6e52d5ee8566db": {
+      "workers": {
+        "app/(private)/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FVolumes%2FADATA%20SE900G%2Fdev%2Fweb%2Fraba-chat%2Fclient%2Fsrc%2Fserver-actions%2Fmessages.ts%22%2C%5B%22%24%24ACTION_0%22%2C%22sendNewMessage%22%2C%22%24%24ACTION_2%22%2C%22%24%24ACTION_1%22%2C%22readAllMessages%22%2C%22getMessagesUser%22%5D%5D%2C%5B%22%2FVolumes%2FADATA%20SE900G%2Fdev%2Fweb%2Fraba-chat%2Fclient%2Fsrc%2Fserver-actions%2Fchats.ts%22%2C%5B%22getAllChatsUser%22%2C%22createNewChat%22%2C%22%24%24ACTION_1%22%2C%22%24%24ACTION_0%22%5D%5D%2C%5B%22%2FVolumes%2FADATA%20SE900G%2Fdev%2Fweb%2Fraba-chat%2Fclient%2Fsrc%2Fserver-actions%2Fuser.ts%22%2C%5B%22curentUserFromMongoDb%22%2C%22%24%24ACTION_0%22%2C%22%24%24ACTION_2%22%2C%22upadteProfileUser%22%2C%22getAllUsers%22%2C%22%24%24ACTION_1%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/(private)/page": "action-browser"
+      }
+    },
+    "df368a7791da44f7676fd66b22cb115347ca9150": {
+      "workers": {
+        "app/(private)/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FVolumes%2FADATA%20SE900G%2Fdev%2Fweb%2Fraba-chat%2Fclient%2Fsrc%2Fserver-actions%2Fmessages.ts%22%2C%5B%22%24%24ACTION_0%22%2C%22sendNewMessage%22%2C%22%24%24ACTION_2%22%2C%22%24%24ACTION_1%22%2C%22readAllMessages%22%2C%22getMessagesUser%22%5D%5D%2C%5B%22%2FVolumes%2FADATA%20SE900G%2Fdev%2Fweb%2Fraba-chat%2Fclient%2Fsrc%2Fserver-actions%2Fchats.ts%22%2C%5B%22getAllChatsUser%22%2C%22createNewChat%22%2C%22%24%24ACTION_1%22%2C%22%24%24ACTION_0%22%5D%5D%2C%5B%22%2FVolumes%2FADATA%20SE900G%2Fdev%2Fweb%2Fraba-chat%2Fclient%2Fsrc%2Fserver-actions%2Fuser.ts%22%2C%5B%22curentUserFromMongoDb%22%2C%22%24%24ACTION_0%22%2C%22%24%24ACTION_2%22%2C%22upadteProfileUser%22%2C%22getAllUsers%22%2C%22%24%24ACTION_1%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/(private)/page": "action-browser"
+      }
+    },
+    "e0c36a97dcbaa61735c15fa3e9bf9bd7914c736b": {
+      "workers": {
+        "app/(private)/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FVolumes%2FADATA%20SE900G%2Fdev%2Fweb%2Fraba-chat%2Fclient%2Fsrc%2Fserver-actions%2Fmessages.ts%22%2C%5B%22%24%24ACTION_0%22%2C%22sendNewMessage%22%2C%22%24%24ACTION_2%22%2C%22%24%24ACTION_1%22%2C%22readAllMessages%22%2C%22getMessagesUser%22%5D%5D%2C%5B%22%2FVolumes%2FADATA%20SE900G%2Fdev%2Fweb%2Fraba-chat%2Fclient%2Fsrc%2Fserver-actions%2Fchats.ts%22%2C%5B%22getAllChatsUser%22%2C%22createNewChat%22%2C%22%24%24ACTION_1%22%2C%22%24%24ACTION_0%22%5D%5D%2C%5B%22%2FVolumes%2FADATA%20SE900G%2Fdev%2Fweb%2Fraba-chat%2Fclient%2Fsrc%2Fserver-actions%2Fuser.ts%22%2C%5B%22curentUserFromMongoDb%22%2C%22%24%24ACTION_0%22%2C%22%24%24ACTION_2%22%2C%22upadteProfileUser%22%2C%22getAllUsers%22%2C%22%24%24ACTION_1%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/(private)/page": "action-browser"
+      }
+    }
+  },
+  "edge": {},
+  "encryptionKey": "kvlwnpLuZlVsr5TlbJKucVev7dmFnGRurInlUCyeLTg="
+}
